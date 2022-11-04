@@ -46,12 +46,8 @@ contains
 !>
 ! Compute the area of a triangle using the Heron's formula:
 !
-!$$
-!\begin{align} 
-!s & =  \frac{a+b+c}{2} \\
-!A & =  \sqrt{s(s-a)(s-b)(s-c)}
-!\end{align}
-!$$
+!$$ s = \frac{a+b+c}{2} $$
+!$$ A = \sqrt{s(s-a)(s-b)(s-c)} $$
 !
    real function get_area( this )
       class(triangle), intent(in) :: this

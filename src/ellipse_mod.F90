@@ -56,13 +56,9 @@ contains
 !>
 ! Compute the perimeter of an ellipse using the formula:
 !
-!$$
-!\begin{align} \label{eqn}
-! h & =  \frac{(a-b)^2}{(a+b)^2} \\
-! t & =  1 + \frac{1}{4}h + \frac{1}{64}h^2 + \frac{1}{256}h^3 + \frac{25}{16384}h^4 + \frac{49}{65536}h^5 + \frac{441}{1048576}h^6 \\
-! P & =  \pi \times (a+b) \times t
-!\end{align}
-!$$
+!$$ h =  \frac{(a-b)^2}{(a+b)^2} $$
+!$$ t =  1 + \frac{1}{4}h + \frac{1}{64}h^2 + \frac{1}{256}h^3 + \frac{25}{16384}h^4 + \frac{49}{65536}h^5 + \frac{441}{1048576}h^6 $$
+!$$ P = \pi \times (a+b) \times t $$
 !
    real function get_perimeter( this )
       class(ellipse), intent(in) :: this
